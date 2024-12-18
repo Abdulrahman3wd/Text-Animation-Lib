@@ -2460,5 +2460,28 @@ footer {
     .card {
         padding: 1.5rem;
     }
+
+    
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-left {
+        text-align: center;
+    }
+    
+
+    .footer-right {
+        text-align: center;
+    }
+    .social-links {
+        display: none;
+        width: 0;
+
+    }
+    
     
 }

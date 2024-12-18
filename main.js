@@ -1,9 +1,4 @@
 
-
-
-
-
-
 const letters = document.querySelectorAll('.generative-text span');
 letters.forEach(letter => {
     setInterval(() => {
