@@ -1,25 +1,3 @@
-
-const letters = document.querySelectorAll('.generative-text span');
-letters.forEach(letter => {
-    setInterval(() => {
-        letter.style.setProperty('--x', `${Math.random() * 20 - 10}px`);
-        letter.style.setProperty('--y', `${Math.random() * 20 - 10}px`);
-        letter.style.setProperty('--r', `${Math.random() * 10 - 5}deg`);
-        letter.style.setProperty('--s', `${Math.random() * 0.4 + 0.8}`);
-        letter.style.setProperty('--nx', `${Math.random() * 20 - 10}px`);
-        letter.style.setProperty('--ny', `${Math.random() * 20 - 10}px`);
-        letter.style.setProperty('--nr', `${Math.random() * 10 - 5}deg`);
-        letter.style.setProperty('--ns', `${Math.random() * 0.4 + 0.8}`);
-    }, 3000);
-});
-
-
-
-let x =  document.querySelectorAll('.card');
-
-console.log(x.length);
-
-
 const cardData = {
     'fade-in': {
         html: `
@@ -3770,6 +3748,28 @@ const cardData = {
 
 };
 
+const letters = document.querySelectorAll('.generative-text span');
+letters.forEach(letter => {
+    setInterval(() => {
+        letter.style.setProperty('--x', `${Math.random() * 20 - 10}px`);
+        letter.style.setProperty('--y', `${Math.random() * 20 - 10}px`);
+        letter.style.setProperty('--r', `${Math.random() * 10 - 5}deg`);
+        letter.style.setProperty('--s', `${Math.random() * 0.4 + 0.8}`);
+        letter.style.setProperty('--nx', `${Math.random() * 20 - 10}px`);
+        letter.style.setProperty('--ny', `${Math.random() * 20 - 10}px`);
+        letter.style.setProperty('--nr', `${Math.random() * 10 - 5}deg`);
+        letter.style.setProperty('--ns', `${Math.random() * 0.4 + 0.8}`);
+    }, 3000);
+});
+
+
+
+let x =  document.querySelectorAll('.card');
+
+console.log(x.length);
+
+
+
 function showCode(className) {
     const data = cardData[className];
     if (data) {
@@ -3799,5 +3799,21 @@ function copyCode(elementId) {
         showPopup("Code copied to clipboard!");
     }).catch(err => {
         showPopup("Failed to copy code. Please try again!", true);
+    });
+}
+
+
+function filterCards() {
+    let input = document.getElementById('searchInput').value.toLowerCase(); 
+    let cards = document.querySelectorAll('.card');  
+    
+    cards.forEach(function(card) {
+        let title = card.querySelector('h2').textContent.toLowerCase();  
+        
+        if (title.includes(input)) {  
+            card.style.display = "block";  
+        } else {
+            card.style.display = "none";  
+        }
     });
 }

@@ -19,7 +19,6 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <!-- <img src="motion.png" alt=""> -->
                 <h2 class="projector-flicker">CSS Animations</h2>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +26,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
                     </li>
@@ -37,12 +35,19 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
-                
                 </ul>
+                <div class="search-bar ms-auto">
+                    <input
+                        type="text"
+                        id="searchInput"
+                        class="form-control"
+                        placeholder="Search..."
+                        onkeyup="filterCards()"
+                    />
+                </div>
             </div>
         </div>
     </nav>
-
     <div class="container">
         <header class="header">
             <h1 class="rainbow"> Text Animation Gallery</h1>
@@ -50,9 +55,11 @@
         </header>
 
         <section class="animation-cards">
+            
 
 
-            <div class="card">
+
+            <div class="card" data-animation="fade-in">
                 <h2 class="fade-in">Fade In</h2>
                 <p> fade-in animation</p>
                 <button onclick="showCode('fade-in')">Try Me</button>
@@ -62,7 +69,7 @@
 
 
 
-            <div class="card">
+            <div class="card" data-animation="typing">
                 <h2 class="typing">Typing</h2>
                 <p>Typewriter-like effect</p>
                 <button onclick="showCode('typing')">Try Me</button>
@@ -70,7 +77,7 @@
 
 
             
-            <div class="card">
+            <div class="card" data-animation="rainbow">
                 <h2 class="rainbow">Rainbow</h2>
                 <p>Colorful Text Transition</p>
                 <button onclick="showCode('rainbow')">Try Me</button>
@@ -78,7 +85,7 @@
 
 
                         
-            <div class="card">
+            <div class="card" data-animation="bounce">
                 <h2 class="bounce">Bounce</h2>
                 <p>playful bouncing text</p>
                 <button onclick="showCode('bounce')">Try Me</button>
@@ -86,100 +93,100 @@
 
             
                         
-            <div class="card">
+            <div class="card" data-animation="wave">
                 <h2 class="wave">Wave</h2>
                 <p>Smooth Waving motion</p>
                 <button onclick="showCode('wave')">Try Me</button>
             </div> 
 
 
-            <div class="card">
+            <div class="card" data-animation="neon">
                 <h2 class="neon">Neon</h2>
                 <p>Glowing neon effect</p>
                 <button onclick="showCode('neon')">Try Me</button>
             </div>
 
-            <div class="card">
+            <div class="card" data-animation="glitch">
                 <h2 class="glitch" data-text="Glitch">Glitch</h2>
                 <p>Digital distortion effect</p>
                 <button onclick="showCode('glitch')">Try Me</button>
             </div>
 
-            <div class="card">
+            <div class="card" data-animation="shake">
                 <h2 class="shake">Shake</h2>
                 <p>Energetic wobble effect</p>
                 <button onclick="showCode('shake')">Try Me</button>
             </div>
 
-            <div class="card">
+            <div class="card" data-animation="slide-out">
                 <h2 class="slide-out">Slide Out</h2>
                 <p> sliding transition</p>
                 <button onclick="showCode('slide-out')">Try Me</button>
             </div>
 
-            <div class="card">
+            <div class="card" data-animation="circular">
                 <h2 class="circular">Rotate</h2>
                 <p>Smooth circular motion</p>
                 <button onclick="showCode('circular')">Try Me</button>
             </div>
 
-            <div class="card">
+            <div class="card" data-animation="zoom-out">
                 <h2 class="zoom-out">Zoom</h2>
                 <p>Dynamic scaling effect</p>
                 <button onclick="showCode('zoom-out')">Try Me</button>
             </div>
 
 
-            <div class="card">
+            <div class="card" data-animation="stretch-skew">
                 <h2 class="stretch-skew">Stretch</h2>
                 <p>Elastic distortion effect</p>
                 <button onclick="showCode('stretch-skew')">Try Me</button>
             </div>
 
 
-            <div class="card">
+            <div class="card" data-animation="perspective-3d">
                 <h2 class="perspective-3d">3D Flip</h2>
                 <p> perspective rotation</p>
                 <button onclick="showCode('perspective-3d')">Try Me</button>
             </div>
 
-            <div class="card">
+            <div class="card" data-animation="shape-morph">
                 <h2 class="shape-morph">Morph</h2>
                 <p>Shape transition</p>
                 <button onclick="showCode('shape-morph')">Try Me</button>
             </div>
 
-            <div class="card">
+            <div class="card" data-animation="dissolve">
                 <h2 class="dissolve">Dissolve</h2>
                 <p>Ethereal fading effect</p>
                 <button onclick="showCode('dissolve')">Try Me</button>
             </div>
 
-            <div class="card">
+            <div class="card" data-animation="smoke">
                 <h2 class="smoke">Smoke</h2>
                 <p> smoke animation</p>
                 <button onclick="showCode('smoke')">Try Me</button>
             </div>
 
-            <div class="card">
+            <div class="card" data-animation="fire">
                 <h2 class="fire">Fire</h2>
                 <p> flame animation</p>
                 <button onclick="showCode('fire')">Try Me</button>
             </div>
 
-            <div class="card">
+            <div class="card" data-animation="sparkle">
                 <h2 class="sparkle">Sparkle</h2>
                 <p>Magical glitter effect</p>
                 <button onclick="showCode('sparkle')">Try Me</button>
             </div>
 
-            <div class="card">
+            <div class="card" data-animation="scroll-horizontal">
                 <h2 class="scroll-horizontal">Scrolling Text →</h2>
                 <p> horizontal movement</p>
                 <button onclick="showCode('scroll-horizontal')">Try Me</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-animation="scroll-vertical">
                 <div class="vertical-container">
                 <h2 class="scroll-vertical">Scrolling Text ↓</h2>
                 </div>
@@ -635,7 +642,7 @@
         </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="container">
             <div class="row">
                 <!-- About Section -->
