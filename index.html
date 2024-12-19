@@ -5,14 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animated Text Showcase</title>
     <link rel="icon" type="image/x-icon" href="motion.png">
-
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css ">
 
+
+    <link rel="stylesheet" href="css/styles.css">
+
     <!-- fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <!-- <img src="motion.png" alt=""> -->
+                <h2 class="projector-flicker">CSS Animations</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Docs">Docs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <div class="container">
         <header class="header">
@@ -26,7 +55,7 @@
             <div class="card">
                 <h2 class="fade-in">Fade In</h2>
                 <p> fade-in animation</p>
-                <button>Try Me</button>
+                <button onclick="showCode('fade-in')">Try Me</button>
             </div> 
 
 
@@ -36,7 +65,7 @@
             <div class="card">
                 <h2 class="typing">Typing</h2>
                 <p>Typewriter-like effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('typing')">Try Me</button>
             </div> 
 
 
@@ -44,7 +73,7 @@
             <div class="card">
                 <h2 class="rainbow">Rainbow</h2>
                 <p>Colorful Text Transition</p>
-                <button>Try Me</button>
+                <button onclick="showCode('rainbow')">Try Me</button>
             </div> 
 
 
@@ -52,7 +81,7 @@
             <div class="card">
                 <h2 class="bounce">Bounce</h2>
                 <p>playful bouncing text</p>
-                <button>Try Me</button>
+                <button onclick="showCode('bounce')">Try Me</button>
             </div> 
 
             
@@ -60,104 +89,102 @@
             <div class="card">
                 <h2 class="wave">Wave</h2>
                 <p>Smooth Waving motion</p>
-                <button>Try Me</button>
+                <button onclick="showCode('wave')">Try Me</button>
             </div> 
 
 
             <div class="card">
                 <h2 class="neon">Neon</h2>
                 <p>Glowing neon effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('neon')">Try Me</button>
             </div>
 
             <div class="card">
                 <h2 class="glitch" data-text="Glitch">Glitch</h2>
                 <p>Digital distortion effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('glitch')">Try Me</button>
             </div>
 
             <div class="card">
                 <h2 class="shake">Shake</h2>
                 <p>Energetic wobble effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('shake')">Try Me</button>
             </div>
 
             <div class="card">
                 <h2 class="slide-out">Slide Out</h2>
                 <p> sliding transition</p>
-                <button>Try Me</button>
+                <button onclick="showCode('slide-out')">Try Me</button>
             </div>
 
             <div class="card">
                 <h2 class="circular">Rotate</h2>
                 <p>Smooth circular motion</p>
-                <button>Try Me</button>
+                <button onclick="showCode('circular')">Try Me</button>
             </div>
 
             <div class="card">
                 <h2 class="zoom-out">Zoom</h2>
                 <p>Dynamic scaling effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('zoom-out')">Try Me</button>
             </div>
 
 
             <div class="card">
                 <h2 class="stretch-skew">Stretch</h2>
                 <p>Elastic distortion effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('stretch-skew')">Try Me</button>
             </div>
 
 
             <div class="card">
                 <h2 class="perspective-3d">3D Flip</h2>
                 <p> perspective rotation</p>
-                <button>Try Me</button>
+                <button onclick="showCode('perspective-3d')">Try Me</button>
             </div>
 
             <div class="card">
                 <h2 class="shape-morph">Morph</h2>
                 <p>Shape transition</p>
-                <button>Try Me</button>
+                <button onclick="showCode('shape-morph')">Try Me</button>
             </div>
 
             <div class="card">
                 <h2 class="dissolve">Dissolve</h2>
                 <p>Ethereal fading effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('dissolve')">Try Me</button>
             </div>
 
             <div class="card">
                 <h2 class="smoke">Smoke</h2>
                 <p> smoke animation</p>
-                <button>Try Me</button>
+                <button onclick="showCode('smoke')">Try Me</button>
             </div>
 
             <div class="card">
                 <h2 class="fire">Fire</h2>
                 <p> flame animation</p>
-                <button>Try Me</button>
+                <button onclick="showCode('fire')">Try Me</button>
             </div>
 
             <div class="card">
                 <h2 class="sparkle">Sparkle</h2>
                 <p>Magical glitter effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('sparkle')">Try Me</button>
             </div>
 
             <div class="card">
                 <h2 class="scroll-horizontal">Scrolling Text →</h2>
-
                 <p> horizontal movement</p>
-                <button>Try Me</button>
+                <button onclick="showCode('scroll-horizontal')">Try Me</button>
             </div>
             
             <div class="card">
                 <div class="vertical-container">
-
                 <h2 class="scroll-vertical">Scrolling Text ↓</h2>
                 </div>
                 <p> vertical movement</p>
-                <button>Try Me</button>
+                <button onclick="showCode('scroll-vertical')">Try Me</button>
             </div>
             
             <div class="card">
@@ -165,7 +192,7 @@
                     <h2 class="parallax-text" data-text="Parallax">Parallax</h2>
                 </div>
                 <p> depth movement</p>
-                <button>Try Me</button>
+                <button onclick="showCode('parallax-container')">Try Me</button>
             </div>
 
             <div class="card">
@@ -173,13 +200,13 @@
                     <span>Un</span><span>fo</span><span>ld</span>
                 </h2>
                 <p>Split text animation</p>
-                <button>Try Me</button>
+                <button onclick="showCode('split-text')">Try Me</button>
             </div>
 
             <div class="card">
                 <h2 class="collapse-expand">Collapse</h2>
                 <p> scaling animation</p>
-                <button>Try Me</button>
+                <button onclick="showCode('collapse-expand')">Try Me</button>
             </div>
 
             <div class="card">
@@ -193,14 +220,14 @@
                     <span>e</span>
                 </h2>
                 <p>Letter scramble effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('shuffle')">Try Me</button>
             </div>
             
 
             <div class="card">
                 <h2 class="sync-beat">Beat</h2>
                 <p>Rhythmic pulsing effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('sync-beat')">Try Me</button>
             </div>
 
             <div class="card">
@@ -210,7 +237,7 @@
                     <span class="layer-3">Layers</span>
                 </h2>
                 <p>Multi-layer animation</p>
-                <button>Try Me</button>
+                <button onclick="showCode('layered-text')">Try Me</button>
             </div>
 
             
@@ -219,7 +246,7 @@
                     <span class="left">Col</span><span class="right">lide</span>
                 </h2>
                 <p>Impact animation</p>
-                <button>Try Me</button>
+                <button onclick="showCode('collision')">Try Me</button>
             </div>
 
 
@@ -228,14 +255,14 @@
                     <span class="part1">Kin</span><span class="part2">etic</span>
                 </h2>
                 <p>Split motion effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('split-kinetic')">Try Me</button>
             </div>
 
 
             <div class="card">
                 <h2 class="drip" data-text="Dripping">Dripping</h2>
                 <p>Liquid drip animation</p>
-                <button>Try Me</button>
+                <button onclick="showCode('drip')">Try Me</button>
             </div>
 
 
@@ -250,7 +277,7 @@
                     <span>h</span>
                 </h2>
                 <p>Elastic letter animation</p>
-                <button>Try Me</button>
+                <button onclick="showCode('stretchy')">Try Me</button>
             </div>
 
             <div class="card">
@@ -258,40 +285,42 @@
                     <span>Blob</span>
                 </h2>
                 <p> morphing effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('blob-text')">Try Me</button>
             </div>
 
             <div class="card">
                 <h2 class="vhs-text" data-text="VHS">VHS</h2>
                 <p>Retro video effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('vhs-text')">Try Me</button>
             </div>
+            
             
 
             <div class="card">
                 <h2 class="pixel-text" data-text="Pixel">Pixel</h2>
                 <p>Retro pixel animation</p>
-                <button>Try Me</button>
+                <button onclick="showCode('pixel-text')">Try Me</button>
             </div>
+            
             
 
             <div class="card">
                 <h2 class="rgb-shift" data-text="RGB">RGB</h2>
                 <p>Color channel shift</p>
-                <button>Try Me</button>
+                <button onclick="showCode('rgb-shift')">Try Me</button>
             </div>
             
 
             <div class="card">
                 <h2 class="shadow-shift" data-text="Shadow">Shadow</h2>
                 <p>Dynamic light effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('shadow-shift')">Try Me</button>
             </div>
             
             <div class="card">
                 <h2 class="light-sweep">Sweep</h2>
                 <p>Shimmering light effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('light-sweep')">Try Me</button>
             </div>
 
             <div class="card">
@@ -305,13 +334,13 @@
                     <span style="--x: -35px; --y: -30px; --r: -45deg;">r</span>
                 </h2>
                 <p>Breaking apart effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('shatter')">Try Me</button>
             </div>
 
             <div class="card">
                 <h2 class="ember-text">Embers</h2>
                 <p>Glowing particle effects</p>
-                <button>Try Me</button>
+                <button onclick="showCode('ember-text')">Try Me</button>
             </div>
 
 
@@ -323,7 +352,7 @@
                     <span>t</span>
                 </h2>
                 <p>Evaporation effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('dust')">Try Me</button>
             </div>
             <div class="card">
                 <h2 class="flipboard">
@@ -333,7 +362,7 @@
                     <span>p</span>
                 </h2>
                 <p> board effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('flipboard')">Try Me</button>
             </div>
 
             <div class="card">
@@ -345,7 +374,7 @@
                     <span>e</span>
                 </h2>
                 <p>Panel sliding effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('sliding-panels')">Try Me</button>
             </div>
             
             <div class="card">
@@ -358,19 +387,19 @@
                     <span class="puzzle-piece" style="--x: 20px; --y: 20px; --r: -45deg;">e</span>
                 </h2>
                 <p>Puzzle assembly effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('puzzle-reveal')">Try Me</button>
             </div>
 
 
             <div class="card">
                 <h2 class="environment-map" data-text="Reflect">Reflect</h2>
-                <p>Environmental reflection</p>
-                <button>Try Me</button>
+                <p> reflection</p>
+                <button onclick="showCode('environment-map')">Try Me</button>
             </div>
             <div class="card">
                 <h2 class="ripple" data-text="Ripple">Ripple</h2>
                 <p>Water ripple effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('ripple')">Try Me</button>
             </div>
 
             <div class="card">
@@ -382,25 +411,25 @@
                     <span style="--x: -25px; --y: -15px; --r: -35deg;">k</span>
                 </h2>
                 <p>Shard fragmentation</p>
-                <button>Try Me</button>
+                <button onclick="showCode('fragment')">Try Me</button>
             </div>
 
             <div class="card">
                 <h2 class="ink-spread" data-text="Ink">Ink</h2>
                 <p>Fluid ink spread</p>
-                <button>Try Me</button>
+                <button onclick="showCode('ink-spread')">Try Me</button>
             </div>
 
             <div class="card">
                 <h2 class="rubber-band">Stretch</h2>
                 <p>Elastic animation</p>
-                <button>Try Me</button>
+                <button onclick="showCode('rubber-band')">Try Me</button>
             </div>
 
             <div class="card">
                 <h2 class="bouncy-drop">Drop</h2>
                 <p>Bouncy entrance</p>
-                <button>Try Me</button>
+                <button onclick="showCode('bouncy-drop')">Try Me</button>
             </div>
             
             <div class="card">
@@ -412,8 +441,8 @@
                     <span>g</span>
                 </h2>
                 <p>Overshoot animation</p>
-                <button>Try Me</button>
-            </div>
+                <button onclick="showCode('overshoot')">Try Me</button>
+            </div >
             
 
             <div class="card">
@@ -425,7 +454,7 @@
                     <span>y</span>
                 </h2>
                 <p>Breeze effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('wind-text')">Try Me</button>
             </div>
             <div class="card">
                 <h2 class="gravity-pull">
@@ -435,7 +464,7 @@
                     <span>p</span>
                 </h2>
                 <p>Gravity effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('gravity-pull')">Try Me</button>
             </div>
             
             
@@ -443,7 +472,7 @@
             <div class="card">
                 <h2 class="gradient-reveal" data-text="Reveal">Reveal</h2>
                 <p>Gradient mask effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('gradient-reveal')">Try Me</button>
             </div>
             
             
@@ -458,7 +487,7 @@
                     <span>r</span>
                 </h2>
                 <p>Sequential animation</p>
-                <button>Try Me</button>
+                <button onclick="showCode('stagger-letters')">Try Me</button>
             </div>
             
 
@@ -468,49 +497,49 @@
                     <span class="pulse">Pulse</span>
                 </h2>
                 <p>Continuous animations</p>
-                <button>Try Me</button>
+                <button onclick="showCode('loop-text')">Try Me</button>
             </div>
             
             <div class="card">
                 <h2 class="outline-animate" data-text="Outline">Outline</h2>
                 <p>Animated border</p>
-                <button>Try Me</button>
+                <button onclick="showCode('outline-animate')">Try Me</button>
             </div>
 
             <div class="card">
                 <h2 class="gradient-fill">Rainbow</h2>
                 <p>Flowing colors</p>
-                <button>Try Me</button>
+                <button onclick="showCode('gradient-fill')">Try Me</button>
             </div>
 
             <div class="card">
                 <h2 class="fade-colors">Colors</h2>
                 <p>Color transition</p>
-                <button>Try Me</button>
+                <button onclick="showCode('fade-colors')">Try Me</button>
             </div>
 
             <div class="card">
                 <h2 class="holographic" data-text="Holo">Holo</h2>
                 <p>3D floating effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('holographic')">Try Me</button>
             </div>
             
             <div class="card">
                 <h2 class="film-grain" data-text="Vintage">Vintage</h2>
                 <p>Film grain effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('film-grain')">Try Me</button>
             </div>
             <div class="card">
                 <h2 class="projector-flicker">Cinema</h2>
                 <p>Retro projector effect</p>
-                <button>Try Me</button>
+                <button onclick="showCode('projector-flicker')">Try Me</button>
             </div>
             
             
             <div class="card">
                 <h2 class="silent-film">The End</h2>
                 <p>Silent era style</p>
-                <button>Try Me</button>
+                <button onclick="showCode('silent-film')">Try Me</button>
             </div>
             
 
@@ -524,7 +553,7 @@
                     <span>I</span>
                 </h2>
                 <p>AI-generated motion</p>
-                <button>Try Me</button>
+                <button onclick="showCode('generative-text')">Try Me</button>
             </div>
 
 
@@ -535,7 +564,7 @@
                     <span class="emotion-angry">Mad</span>
                 </h2>
                 <p>Mood animations</p>
-                <button>Try Me</button>
+                <button onclick="showCode('emotion-text')">Try Me</button>
             </div>
 
             <div class="card">
@@ -547,7 +576,7 @@
                     <span>w</span>
                 </h2>
                 <p>Dynamic text flow</p>
-                <button>Try Me</button>
+                <button onclick="showCode('flow-text')">Try Me</button>
             </div>
 
             <div class="card">
@@ -559,7 +588,7 @@
                     <span>d</span>
                 </h2>
                 <p>Combined effects</p>
-                <button>Try Me</button>
+                <button onclick="showCode('hybrid-animation')">Try Me</button>
             </div>
             
             
@@ -572,52 +601,90 @@
                     <span>e</span>
                 </h2>
                 <p>Multi-step animation</p>
-                <button>Try Me</button>
+                <button onclick="showCode('multi-step')">Try Me</button>
             </div>
             
 
 
         </section>
 
-
-        
-        
-            
-        
-        
-        
-
     </div>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-left">
-                <p class="projector-flicker">Created with ❤️ by [Abdulrahman Awad]</p>
-            </div>
-            <div class="footer-center">
-                <div class="social-links">
-                    <a href="https://github.com/Abdulrahman3wd" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/abdulrahman3wd/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                        LinkedIn
-                    </a>
-                    <a href="mailto:abdulrahmanawad7861991@email.com">
-                        <i class="fas fa-envelope"></i>
-                        Email
-                    </a>
+    <div class="modal fade" id="codeModal" tabindex="-1" aria-labelledby="codeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="codeModalLabel">Code Preview</h5>
+                    <button class="exit-modal"  data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>HTML Code</h6>
+                            <pre id="htmlCode" class="bg-light p-2 rounded"></pre>
+                            <button class="btn btn-secondary" onclick="copyCode('htmlCode')">Copy HTML</button>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>CSS Code</h6>
+                            <pre id="cssCode" class="bg-light p-2 rounded"></pre>
+                            <button class="btn btn-secondary" onclick="copyCode('cssCode')">Copy CSS</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="footer-right">
-                <p>© 2024 All Rights Reserved</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4">
+                    <h5>About Me</h5>
+                    <p>
+                        I am a Software Engineer with a passion for creating innovative solutions.
+                        
+                    </p>
+                </div>
+
+
+
+                <!-- Social Media Section -->
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.facebook.com/n0one12/" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a target="_blank" href="https://github.com/Abdulrahman3wd" aria-label="Github"><i class="fab fa-github"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/_abdulrahman_44/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a target="_blank" href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 foot-right">
+                    <h2 class="wave">  
+                                    Css Text Animations
+                    </h2>
+
+                    
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Abdulrahman awad. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+
+
     
-    
-    
-    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script src="js/main.js"></script>
 </body>
 </html>
+
+
